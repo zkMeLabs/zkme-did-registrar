@@ -1,0 +1,1 @@
+# zkme-did-registrar
