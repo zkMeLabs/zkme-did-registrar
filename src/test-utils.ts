@@ -8,7 +8,7 @@ import { computePublicKey } from "@ethersproject/signing-key";
 /**
  * Create public and private key and generate address.
  * @param privateKey
- * @returns Returns the address and public key of type base58.
+ * @returns Returns the address, public key and public key of type base58.
  */
 async function createKeyPair(privateKey: string): Promise<any> {
   try {
@@ -26,7 +26,7 @@ async function createKeyPair(privateKey: string): Promise<any> {
 /**
  * Creates a DID Uri.
  * @param privateKey
- * @returns Returns the address, public key of type base58, private key and DID Uri.
+ * @returns Returns the address, public key, public key of type base58, private key and DID Uri.
  */
 export async function createDID(
   network: string,
@@ -56,7 +56,7 @@ export async function createDID(
     }
 
     return BaseResponse.from(
-      { address, publicKeyBase58, _privateKey, did, publicKey },
+      { address, publicKey, publicKeyBase58, _privateKey, did },
       "Created DID uri successfully"
     );
   } catch (error) {
