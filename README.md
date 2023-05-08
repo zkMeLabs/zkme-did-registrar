@@ -30,7 +30,9 @@ did:zkme:testnet:0x2acE1D0d919293D10Ef7611bC768F5386d908fc2
 ```
 
 ### On Zetachain mainnet
-Comming soon...
+```
+did:zkme:0x2acE1D0d919293D10Ef7611bC768F5386d908fc2
+```
 
 ## DID On-Chain
 
